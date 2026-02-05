@@ -1,6 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
+
+using TMPro;
 
 public class KillTarget : MonoBehaviour
 {
@@ -9,11 +10,14 @@ public class KillTarget : MonoBehaviour
     public GameObject killEffect;
     public float timeToSelect = 3.0f;
     public int score;
+    public TextMeshProUGUI scoreText;
 
     Transform camera;
     private float countDown;
      void Start()
     {
+        // initialize the score text
+        scoreText.text = "Score: 0";
         camera = Camera.main.transform;
         score = 0;
         countDown = timeToSelect;
@@ -43,6 +47,7 @@ public class KillTarget : MonoBehaviour
                 // killed
                 Instantiate(killEffect, target.transform.position, target.transform.rotation);
                 score += 1;
+                scoreText.text = "Score: " + score;
                 countDown = timeToSelect;
                 SetRandomPosition();
             }
