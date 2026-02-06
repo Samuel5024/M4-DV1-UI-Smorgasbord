@@ -1,9 +1,16 @@
 using UnityEngine;
-using System.Collections.Generic;
-using UnityEngine.XR.Interaction.Toolkit;
 
-public class BasicInteractor : XRBaseControllerInteractor
+public class BasicInteractor : MonoBehaviour
 {
-    public override void GetValidTargets(List<XRBaseInteractable>validTargets) {}
-    protected override List<XRBaseInteractable> ValidTargets { get; }
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
 }
