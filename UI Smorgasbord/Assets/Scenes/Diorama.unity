@@ -2224,6 +2224,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3606247321767810851, guid: 1adad94af0fdd504aba0c4125ef5f0c4, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1902084125}
+    - targetCorrespondingSourceObject: {fileID: 3606247321767810851, guid: 1adad94af0fdd504aba0c4125ef5f0c4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1902084126}
   m_SourcePrefab: {fileID: 100100000, guid: 1adad94af0fdd504aba0c4125ef5f0c4, type: 3}
 --- !u!224 &1902084119 stripped
 RectTransform:
@@ -2242,6 +2245,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ead88ac45cfe1a4e945fdfd0d438379, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1902084126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1268747164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0cb9aa70a22847b5925ee5f067c10a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Camera: {fileID: 0}
+  m_OriginBaseGameObject: {fileID: 1268747164}
+  m_CameraFloorOffsetObject: {fileID: 0}
+  m_RequestedTrackingOriginMode: 0
+  m_CameraYOffset: 1.1176
 --- !u!1 &2066774439
 GameObject:
   m_ObjectHideFlags: 0
